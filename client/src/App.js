@@ -108,9 +108,7 @@ function App() {
 
 
   useEffect(function(){
-    if(new URLSearchParams(window.location.search).get('code') !== null){
       handleClick1();
-    }
   }, []);
 
 
