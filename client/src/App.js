@@ -21,11 +21,7 @@ function App() {
           'code': urlParams.get('code'),
           'redirect_uri' : "https://playlist-generator-for-spotify.herokuapp.com"
         })
-      }).then(function(res){
-        return res.json();
-    }).then(function(res){
-      console.log(res);
-    })
+      })
       let data = await result;
        return data.access_token;
 
