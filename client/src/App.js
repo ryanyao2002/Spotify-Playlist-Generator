@@ -10,21 +10,20 @@ function App() {
   const getToken = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     console.log(urlParams.get('code'));
-    const result = await fetch('https://accounts.spotify.com/api/token', {
+    const result = await axios('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           'Authorization': 'Basic ' + new Buffer("bba7b29c237644038801e01baad50831" + ':' + "cb21eadc98784a9ba6ba77fd4b224b0d").toString('base64')
         },
-        body: querystring.stringify({
+        data: querystring.stringify({
           'grant_type' : 'authorization_code',
           'code': urlParams.get('code'),
           'redirect_uri' : "https://playlist-generator-for-spotify.herokuapp.com"
         })
       })
       let data = result;
-      console.log(data.access_token);
-       return data.access_token;
+       return data.data.access_token;
 
   }
 
