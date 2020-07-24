@@ -23,6 +23,7 @@ function App() {
         })
       })
       let data = result;
+      console.log(data.access_token);
        return data.access_token;
 
   }
