@@ -85,6 +85,7 @@ function App() {
   }
 
   const  handleClick1 = async () =>{
+    console.log("plz work");
 
         const token = await getToken();
           fetch("https://api.spotify.com/v1/me/top/artists?limit=1" ,{
