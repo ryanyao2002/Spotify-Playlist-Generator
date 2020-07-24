@@ -19,7 +19,7 @@ function App() {
         data: querystring.stringify({
           'grant_type' : 'authorization_code',
           'code': urlParams.get('code'),
-          'redirect_uri' : redirect_uri
+          'redirect_uri' : "https://playlist-generator-for-spotify.herokuapp.com"
         })
       })
       console.log(data);
