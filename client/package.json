@@ -2,7 +2,6 @@
   "name": "spotify-personal",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,11 +17,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "client-install":"npm install --prefix client",
-    "client": "npm start --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "react scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
