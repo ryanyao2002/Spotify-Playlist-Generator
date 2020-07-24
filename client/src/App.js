@@ -26,10 +26,8 @@ function App() {
     }).then(function(res){
       console.log(res);
     })
-      console.log(data);
-      console.log("does this work");
       let data = await result;
-       return data.data.access_token;
+       return data.access_token;
 
   }
 
