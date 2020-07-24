@@ -4,7 +4,7 @@ const querystring = require('querystring');
 
 function App() {
 
-  const redirect_uri = "https://dashboard.heroku.com/apps/playlist-generator-for-spotify/callback"
+  const redirect_uri = "/callback"
 
 
   const getToken = async () => {
