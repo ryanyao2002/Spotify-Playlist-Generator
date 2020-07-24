@@ -21,7 +21,8 @@ function App() {
           'redirect_uri' : redirect_uri
         })
       })
-
+      console.log(data);
+      console.log("does this work");
       let data = await result;
        return data.data.access_token;
 
