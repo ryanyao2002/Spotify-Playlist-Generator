@@ -14,7 +14,7 @@ function App() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Authorization': 'Basic ' + new Buffer(process.env.CLIENT_ID + ':' + process.env.CLIENT_SECRET).toString('base64')
+          'Authorization': 'Basic ' + new Buffer("bba7b29c237644038801e01baad50831" + ':' + "cb21eadc98784a9ba6ba77fd4b224b0d").toString('base64')
         },
         body: querystring.stringify({
           'grant_type' : 'authorization_code',
