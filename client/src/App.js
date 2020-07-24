@@ -103,7 +103,7 @@ function App() {
 
   
   function handleClick(){
-    window.location = 'https://dashboard.heroku.com/apps/playlist-generator-for-spotify/login';  
+    window.location = 'https://playlist-generator-for-spotify.herokuapp.com/login';  
   }
 
 
