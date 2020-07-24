@@ -4,8 +4,6 @@ const querystring = require('querystring');
 
 function App() {
 
-  const redirect_uri = "https://playlist-generator-for-spotify.herokuapp.com"
-
 
   const getToken = async () => {
     const urlParams = new URLSearchParams(window.location.search);
