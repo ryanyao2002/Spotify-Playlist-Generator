@@ -22,7 +22,7 @@ function App() {
           'redirect_uri' : "https://playlist-generator-for-spotify.herokuapp.com"
         })
       })
-      let data = await result;
+      let data = result;
        return data.access_token;
 
   }
